@@ -1,0 +1,50 @@
+# 🦊 Aulaf
+
+Local AI assistant for managing thoughts, transcriptions, and Daily Logs.
+
+Uses [Ollama](https://ollama.ai) to run entirely locally - your data never leaves your machine.
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Python 3.10+
+- [Ollama](https://ollama.ai) installed
+```bash
+# Install Ollama model
+ollama pull mistral
+```
+
+### Installation
+```bash
+git clone https://github.com/your-username/aulaf.git
+cd aulaf
+pip install typer rich ollama
+```
+
+### Usage
+```bash
+# One-shot chat
+python aulaf.py chat "Hello!"
+
+# Interactive mode
+python aulaf.py chat
+```
+
+---
+
+## 🛠️ Status
+
+**POC** - Basic chat functionality working. More features coming soon.
+
+---
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE)
+
+---
+
+**Made with 🦊**
