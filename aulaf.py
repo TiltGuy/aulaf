@@ -60,6 +60,19 @@ def chat(
             
       answer = response['message']['content']
       console.print(f"[bold orange1]Aulaf: {answer}")
-      
+
+@app.command()
+def clear():
+  """Clear the conversation context."""
+  context.clear_messages()
+  console.print("[bold green]Conversation context cleared.")
+  
+@app.command()
+def status():
+  """Show the current conversation context."""
+  nb_messages = len(context.get_messages())
+  console.print(f"[bold green]There are currently {nb_messages} in the conversation context.")
+
+
 if __name__ == "__main__":
   app()
